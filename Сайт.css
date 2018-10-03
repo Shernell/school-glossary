@@ -1,0 +1,114 @@
+body {
+    margin: 40; /*отступы */
+	background: url(pictures/background2.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+   }
+   li {
+    font-size: 19pt; /* Размер шрифта */
+    margin-bottom: 0; /* Отступ снизу */
+	
+   }
+   #container {
+    width: 1400px; /* Ширина макета */
+    margin: 0 auto; /* Выравниваем по центру */
+	
+   }
+   header {
+    font-size: 56pt; /* Размер текста */
+    padding: 20px; /* Отступы вокруг текста */
+	text-align:center;
+   }
+   article {
+	background: #ffffff;
+    margin-right: 50px; /* Отступ справа */
+	margin-top: 50px; /* Отступ сверху */
+    padding: 50px; /* Поля вокруг текста */
+	border: 1px solid #999; /* Параметры рамки */
+   }
+   content li {
+    margin-top: 100em /* Отступ сверху */
+   }
+h1 {
+	text-align: center; /*Выравнивание заголовков по центру*/
+}
+p.feature {
+    font-size:18pt; /*Размер текста*/
+}
+
+
+a {
+	text-decoration: none; /* Убираем подчёркивание */
+    color: #000000; /* Цвет ссылок */
+}
+a:hover {
+	color: #228b22;
+}
+ul > li {
+	list-style: none; /*Убираем маркировку*/
+}
+.menu{
+	margin:40px;/* Отступ сверху */
+	background: #ffffff;
+}
+.column{
+	column-count:2;/*Кол-во колонок*/
+	column-gap:25px;/*Расстояние между колонками*/
+}
+.table, .table ul { 
+ list-style: none;
+ margin: 0; padding: 0;
+}
+.table {
+ border: 1px solid #999; /* Параметры рамки */
+ padding: 0 10px; /* Поля */
+ font: 14px Arial, sans-serif; /* Параметры шрифта */
+ box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Тень под меню */
+}
+.table > li {
+ display: inline-block; /* Выстраиваем по горизонтали */
+ border-right: 1px solid #fff; /* Белая линия справа */
+ position: relative; /* Относительное позиционирование */
+}
+.table a {
+ color: #4c4c4c; /* Цвет ссылок */
+ display: block; /* Блочные ссылки */
+}
+.table > li > a {
+ padding: 10px 15px; /* Поля */
+ border-right: 1px solid #d8d8d8; /* Серая линия справа */
+ position: relative; /* Относительное позиционирование */
+ z-index: 3; /* Выводим поверх остальных элементов */
+}
+
+.table ul {
+ position: absolute; /* Абсолютное позиционирование */
+ display: none; /* Прячем подменю */
+ width: 200px; /* Ширина подменю */
+ background: #00CC00; /* Цвет фона */
+ box-shadow: 0 0 10px #666; /* Параметры тени */
+}
+.table ul a {
+ padding: 5px 10px; /* Поля */
+}
+.table ul a:hover {
+ background: #00CC00; /* Цвет фона */
+ color: #fff; /* Цвет текста */
+}
+.table li:hover ul {
+  display: block;
+}
+.table > li:hover::before {
+ content: ''; /* Создаём пустой псевдоэлемент */
+ top: 0; left: 0; right: 0; bottom: 0; /* Размер совпадает с пунктом меню */
+ box-shadow: 0 5px 10px #666; /* Параметры тени */
+ position: absolute; /* Абсолютное позиционирование */
+}
+.table > li:hover > a {
+    background: #00CC00; /* Цвет фона */
+   }
+   
+.center{
+	text-align: center;
+	font-size:18pt;
+}
